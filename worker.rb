@@ -13,6 +13,7 @@ loop do
 
   if elapsed > 10
     puts "#{(count/elapsed).to_i} rps"
+    STDOUT.flush
     count = 0
     start = Time.now
   end
